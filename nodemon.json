@@ -1,0 +1,6 @@
+{
+  "watch": "src",
+  "ext": "js",
+  "ingnore": "/**/*.spec.ts",
+  "exec": "babel-node src/main.js"
+}
