@@ -1,7 +1,8 @@
-import express from 'express'
-import logger from './config/logger'
+import App from './server/app'
 
-export const app = express()
-app.listen(4444, () => {
-  logger.verbose('The Show Must Go On')
-})
+const Bootstrap = () => {
+  const app = new App()
+  app.run()
+}
+
+Bootstrap()
