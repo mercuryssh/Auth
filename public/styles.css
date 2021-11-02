@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Mononoki;
+  src: url(./fonts/mononoki-Regular.ttf);
+}
+
+body {
+  background-color: #282828;
+  color: #b8bb26;
+  font-family: Mononoki;
+  font-size: 28px;
+}
