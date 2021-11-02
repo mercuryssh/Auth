@@ -1,11 +1,14 @@
 import dotenv from 'dotenv'
 import { existsSync } from 'fs'
 import { join } from 'path'
+import LoadApps from './loadApp.service'
 
-export default class ConfigService {
+export default class ConfigService extends LoadApps {
   envFile = String
 
   constructor() {
+    super()
+
     switch (true) {
       case existsSync(join(process.cwd(), '.env.local')):
         this.envFile = '.env.local'

@@ -12,7 +12,12 @@
     "test": "jest --watch"
   },
   "dependencies": {
+    "@prisma/client": "3.3.0",
+    "@quixo3/prisma-session-store": "^3.1.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "prisma": "3.3.0",
+    "pug": "^3.0.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {

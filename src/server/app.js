@@ -7,6 +7,7 @@ export default class App extends ConfigService {
     super()
     this.server = server
     this.server.set('port', process.env.PORT)
+    this.loadApps(server)
   }
 
   run() {
