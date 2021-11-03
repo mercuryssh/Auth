@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -17,11 +14,11 @@ model Session {
   expiresAt DateTime
 }
 
-// model Auth {
-//   id    Int    @id @default(autoincrement())
-//   email String @unique @db.VarChar(225)
-//   password String @db.VarChar(225)
-// }
+model Auth {
+  id       Int    @id @default(autoincrement())
+  email    String @unique @db.VarChar(225)
+  password String @db.VarChar(225)
+}
 
 model User {
   id       Int    @id @default(autoincrement())

@@ -1,8 +1,7 @@
-import auth from '../auth/session'
+import { middleware } from '../auth'
 import App from '../frontend/app'
 
-const app = new App()
-const apps = [auth, app.routes]
+const apps = [middleware, new App().implement()]
 
 export default class LoadApps {
   loadApps(app) {

@@ -11,4 +11,9 @@ export default class App {
       })
     })
   }
+  implement() {
+    return this.routes
+  }
 }
+
+export const middleware = new App().routes
